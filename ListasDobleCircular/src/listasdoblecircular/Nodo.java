@@ -2,26 +2,22 @@ package listasdoblecircular;
 
 public class Nodo {
 
-    //Variable en la cual se va a guardar el valor.
-    private int valor;
-    //Variable para enlazar los nodos.
-    private Nodo siguiente;
+    int dato;
+    Nodo siguiente;
+    Nodo fin;
 
-    /**
-     * Constructor que inicializamos el valor de las variables.
-     */
-    public void Nodo() {
-        this.valor = 0;
-        this.siguiente = null;
-    }
-//Metodo get y set para los atributos.
-
-    public int getValor() {
-        return valor;
+    Nodo(int a) {
+        dato = a;
+        siguiente = null;
+        fin = null;
     }
 
-    public void setValor(int valor) {
-        this.valor = valor;
+    public int getDato() {
+        return dato;
+    }
+
+    public void setDato(int dato) {
+        this.dato = dato;
     }
 
     public Nodo getSiguiente() {
@@ -30,6 +26,14 @@ public class Nodo {
 
     public void setSiguiente(Nodo siguiente) {
         this.siguiente = siguiente;
+    }
+
+    public Nodo getFin() {
+        return fin;
+    }
+
+    public void setFin(Nodo fin) {
+        this.fin = fin;
     }
 
 }
